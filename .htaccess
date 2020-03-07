@@ -1,0 +1,10 @@
+<Files ~ "config.php">
+Order allow,deny
+Deny from all
+Satisfy all
+</Files>
+
+#RewriteEngine On
+#RewriteBase /
+#RewriteCond %{HTTP:SSL} !1
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [QSA,L,R=301]
